@@ -1,0 +1,58 @@
+Question
+QUESTION 1
+==========
+
+Using C#.
+
+Given an array of integers, find the one numerically closest to zero with the following exceptions:
+  - Do NOT include zero itself
+  - If a positive and negative number are an equal distance from zero, the positive number should be returned
+
+NOTES:
+You can utilise Visual Studio or online tools to ensure your code compiles and works as expected.
+Guideline time for this question is 30 minutes, however please take as long as you need to submit your response as we are looking for correct answers over any time constraints.
+
+
+BASE CODE TO START WITH (Please resplace the TODO with your solution)
+=====================================================================
+
+using System;
+
+namespace ClosestToZero
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Closest to Zero");
+            Console.WriteLine();
+
+            Console.WriteLine("Problem:");
+            Console.WriteLine("Given an array of integers, find the one closest to zero, not including zero itself.");
+            Console.WriteLine("If a positive and negative number tie, the positive number should be returned.");
+            Console.WriteLine();
+
+            Console.WriteLine("Example:");
+            Console.WriteLine("Input: [4, 3, -10, 4, 0, 3, -2, -5, 8]");
+            Console.WriteLine("Output: -2");
+            Console.WriteLine();
+
+            int[] testArray = { 4, 3, -10, 4, 3, 0, -2, -5, 8 };
+            Console.WriteLine("Your output: " + ClosestToZero(testArray));
+
+            Console.WriteLine();
+            Console.WriteLine("Press any key to close...");
+            Console.Read();
+        }
+
+        public static int ClosestToZero(int[] input)
+        {
+            // TODO: Implement your logic here
+
+            return 0;
+        }
+    }
+}
+
+
+YOUR SOLUTION WILL BE TESTED UNDER MULTIPLE SCENARIOS, NOT JUST THE EXAMPLE PROVIDED ABOVE. PLEASE MAKE SURE YOU ACCOUNT FOR THIS IN YOUR SUBMISSION.

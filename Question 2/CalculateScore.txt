@@ -1,0 +1,60 @@
+QUESTION 2
+==========
+
+Using C#.
+
+Name Score Test
+
+Each letter in the alphabet is worth a certain number of points. Calculate the score for any name by adding together the score of each letter in the name whilst applying the following rules:
+
+- The first occurrence of a letter awards normal points for that letter.
+- The second occurrence of a letter only awards half points rounded up.
+- The third occurrence of a letter awards double points.
+- Any additional occurrences of a letter award no points.
+- If a letter appears twice next to each other in a string then both letters award double the normal points for that letter.
+
+E.g the name Thomas awards 11 points
+
+NOTES:
+You can utilise Visual Studio or online tools to ensure your code compiles and works as expected.
+Guideline time for this question is 30 minutes, however please take as long as you need to submit your response as we are looking for correct answers over any time constraints.
+
+
+BASE CODE TO START WITH (Please resplace the TODO with your solution)
+=====================================================================
+
+namespace NameScoreTest
+{
+    using System;
+    using System.Collections.Generic;
+
+    public static class Program
+    {
+        private static Dictionary<char, int> Letters = new Dictionary<char, int>(){
+                {'A', 1}, {'B', 3}, {'C', 3}, {'D', 2}, {'E', 1}, {'F', 4}, {'G', 2}, {'H', 4}, {'I', 1}, {'J', 8}, {'K', 5}, {'L', 1}, {'M', 3 }, {'N', 1}, {'O', 1}, {'P', 3}, {'Q', 10 }, {'R', 1}, {'S', 1}, {'T', 1}, {'U',1}, {'V', 4}, {'W', 4}, {'X', 8}, {'Y', 4}, {'Z', 10}
+            };
+
+        static void Main(string[] args)
+        {
+            int score = CalculateScore("Thomas");
+
+            Console.WriteLine("Score for name Thomas is " + score);
+            Console.WriteLine("Press any key to exit");
+
+            Console.ReadKey();            
+        }
+
+        public static int CalculateScore(String input)
+        {
+            // The score
+            int score = 0;
+
+            // TODO: Implement your logic here
+
+            return score;
+        }
+    }
+}
+
+
+YOUR SOLUTION WILL BE TESTED UNDER MULTIPLE SCENARIOS, NOT JUST THE EXAMPLE PROVIDED ABOVE. PLEASE MAKE SURE YOU ACCOUNT FOR THIS IN YOUR SUBMISSION.
